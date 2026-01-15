@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Автосервис</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+    }
+    .container {
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .card {
+      background: #020617;
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+    input, select, button {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 10px;
+      border: none;
+      font-size: 16px;
+    }
+    input, select {
+      background: #020617;
+      color: #f8fafc;
+      border: 1px solid #1e293b;
+    }
+    button {
+      background: #22c55e;
+      color: #022c22;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #16a34a;
+    }
+    .footer {
+      text-align: center;
+      font-size: 13px;
+      opacity: 0.6;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🚗 Автосервис</h1>
+    <p style="text-align:center;opacity:.8;">Онлайн-запись на обслуживание</p>
+
+    <div class="card">
+      <label>Имя</label>
+      <input type="text" placeholder="Введите имя">
+
+      <label>Телефон</label>
+      <input type="tel" placeholder="+7 ___ ___-__-__">
+
+      <label>Услуга</label>
+      <select>
+        <option>Диагностика</option>
+        <option>Замена масла</option>
+        <option>Ремонт двигателя</option>
+        <option>Шиномонтаж</option>
+      </select>
+
+      <button onclick="submitForm()">Записаться</button>
+    </div>
+
+    <div class="footer">
+      Web-app • MVP версия
+    </div>
+  </div>
+
+  <script>
+    function submitForm() {
+      alert("Заявка отправлена! 🚀\n(пока это демо)");
+    }
+  </script>
+
+</body>
+</html>
 
